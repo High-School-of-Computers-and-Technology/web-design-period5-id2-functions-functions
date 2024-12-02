@@ -1,0 +1,15 @@
+# Function #1: addPoints
+def addPoints(userPoints, pointsTobeAdded):
+    newTotalPoints = userPoints + pointsTobeAdded
+    return newTotalPoints
+
+# Function #2: removePoints
+def removePoints(userPoints, pointsTobeDeducted):
+    newTotalPoints = userPoints - pointsTobeDeducted
+    return newTotalPoints
+
+# Function #3: donatePoints
+def donatePoints(donatingUserPoints, receivingUserPoints, amountOfPoints):
+    donatingUserPoints -= amountOfPoints
+    receivingUserPoints += amountOfPoints
+    return [donatingUserPoints, receivingUserPoints]
